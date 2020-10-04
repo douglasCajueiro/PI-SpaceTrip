@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 .planet-name-big{
-    font-size: 6em;
-    color: white;
-    font-family: 'Comfortaa', cursive;
+    
+}
+
+.planet-and-name {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right:auto;
+    margin-left: auto;
 }
 .welcome {
     color: white;
@@ -12,16 +20,9 @@
     font-size: 4em;
     margin-right: 20px;
 }
-.planet-and-name {
-    position: relative;
-    right: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    align-items: center;
-    margin-right:30px;
-}
 .planet-name-big {
+    font-size: 6em;
+    font-family: 'Comfortaa', cursive;
     position: relative;
     margin-right: -150px;
     z-index: 1;

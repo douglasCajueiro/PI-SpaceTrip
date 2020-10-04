@@ -41,7 +41,7 @@ header ul {
     margin-right: 30px;
 }
 header ul :nth-child(odd) {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 header ul :nth-child(even) {
@@ -63,5 +63,6 @@ flex-wrap: wrap;
     position: relative;
     
 }
-.planet
+.planet {
 
+}

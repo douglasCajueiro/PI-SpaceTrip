@@ -1,0 +1,28 @@
+/*Size for Tablets*/
+@media screen and (max-width: 768px) {
+    .planet-big {
+      background-size: 100%;
+      width: 250px;
+      height: 250px;
+      transition-duration: 400ms;
+      transition: ease-in-out;
+      border-radius: 46%;
+      box-shadow: inset -90px -90px 50px #000;
+      display: inline-block;
+      margin: 15px;
+      cursor: url('pointer.svg');
+      border: none;
+    }
+
+    .welcome {
+        font-size: 2em;
+        display: block;
+    }
+
+    .planet-name-big {
+        font-size: 3em;
+        position: relative;
+        display: block;
+        margin-right: none;
+    }
+}
