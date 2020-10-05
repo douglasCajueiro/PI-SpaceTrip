@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
-.planet-name-big{
-    
-}
-
 .planet-and-name {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: auto;
 }
+
 .welcome {
     color: white;
     display: inline-block;
@@ -20,6 +17,7 @@
     font-size: 4em;
     margin-right: 20px;
 }
+
 .planet-name-big {
     font-size: 6em;
     font-family: 'Comfortaa', cursive;

@@ -1,48 +1,40 @@
 /*Size for Smartphones*/
+
 @media screen and (max-width: 699px) {
     .planet-big {
-        width: 50vw;
-        height: 50vw;
+        width: 60vw;
+        height: 60vw;
         box-shadow: inset -50px -50px 50px #000;
     }
-
     .welcome {
         font-size: 1em;
-
     }
-
     .planet-name-big {
         font-size: 2.5em;
     }
-    
 }
 
 
-
 /*Size for Tablets*/
-@media screen and 
-    (min-width: 700px) and 
-    (max-width: 1023px) {
 
+@media screen and (min-width: 700px) and (max-width: 1023px) {
     .planet-big {
-      background-size: 100%;
-      width: 50vw;
-      height: 50vw;
-      transition-duration: 400ms;
-      transition: ease-in-out;
-      border-radius: 46%;
-      box-shadow: inset -90px -90px 50px #000;
-      display: inline-block;
-      margin: 15px;
-      cursor: url('pointer.svg');
-      border: none;
+        background-size: 100%;
+        width: 50vw;
+        height: 50vw;
+        transition-duration: 400ms;
+        transition: ease-in-out;
+        border-radius: 46%;
+        box-shadow: inset -90px -90px 50px #000;
+        display: inline-block;
+        margin: 15px;
+        cursor: url('pointer.svg');
+        border: none;
     }
-
     .welcome {
         font-size: 2.2em;
         display: block;
     }
-
     .planet-name-big {
         font-size: 3.5em;
         position: relative;
