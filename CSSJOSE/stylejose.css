@@ -1,0 +1,196 @@
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    
+  }
+  .column,
+  .columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box; 
+  }
+  
+  /* Bigger than 400 */
+  @media (min-width: 400px) {
+    .container {
+      width: 85%;
+      padding: 0; 
+    }
+  }
+  
+  /* Bigger than 550 */
+  @media (min-width: 550px) {
+    .container {
+      width: 80%;
+    }
+    .column,
+    .columns {
+      margin-left: 4%;
+    }
+    .column:first-child,
+    .columns:first-child {
+      margin-left: 0;
+    }
+  
+    .one-third.column {
+        width: 30.6666666667%;
+    }
+  }
+  
+  /* Base Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  html {
+    font-size: 62.5%;  
+  
+  }
+  body {
+    font-family: 'Gugi', cursive;
+    font-size: 1.5em; 
+    line-height: 1.6;
+    font-weight: 400;
+    color: #222;    
+  }
+  
+  p {
+    margin-top: 0; 
+ }
+  
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h5 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300; 
+  }
+  h1 {
+    font-size: 2.5rem; 
+  }
+  h2 { 
+    font-size: 2rem;
+    
+  }
+  h5 { 
+    font-size: 1rem;
+ }
+  
+  
+  /* Bigger than 550 */
+  @media (min-width: 550px) {
+    h1 { 
+      font-size: 3.0rem; 
+    }
+    h2 {
+      font-size: 2.2rem; 
+    }
+    h5 {
+      font-size: 1.4rem; }
+  }
+
+
+  /* Header
+  -------------------------------------------------- */
+  header {
+      background-color: black;
+  }
+  
+  .menu {
+      text-align: right;
+  }
+  
+  /* Footer
+  -------------------------------------------------- */
+  footer {
+      background-color: black;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  /* Lists
+  ------------------------------------------------- */
+  li {
+      display: inline;
+      padding: 2rem;
+  }
+  
+  /* Links
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  a {
+    color:white;
+    text-decoration: none;
+  }
+    
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  /* Sections
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .section {
+  padding: 5rem 0 5rem;
+  text-align: center;
+  
+  }
+  
+  /* Bigger than 550 */
+  @media (min-width: 550px) {
+      .section {
+        padding: 6rem 0 6rem;
+      }
+  }
+    
+  /* Bigger than 750 */
+  @media (min-width: 750px) {
+      .section {
+          padding: 7rem 0 7rem;
+      }
+  }
+    
+  /* Bigger than 1000 */
+  @media (min-width: 1000px) {
+      .section {
+          padding: 8rem 0 8rem;
+      }
+  }
+  
+  /* Message
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .message {
+  background-image: url('../IMGJOSE/dois.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 15rem;
+
+  }
+  
+  /* Values
+  ---------------------------------------------------- */
+  .value-text {
+      text-align: justify;
+     
+      
+  }
+  .value-price {
+      text-align: left;
+      font-size: small;
+      font-weight: bold; 
+   }
+  
+    /* Utilities
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .u-max-full-width {
+      max-width: 100%;
+      width: 30vw;
+      height: 15vw;
+      box-sizing: border-box;
+      
+  }
