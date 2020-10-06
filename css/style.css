@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: black;
-   
     font-family: 'Gugi', cursive;
     color: white;
 }
@@ -22,13 +21,14 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 header .logo {
     height: 30px;
     cursor: pointer;
 }
+
 header.logo:hover {
     content: url(../images/logo/spacetrip-logo.svg);
-
 }
 
 header ul {
@@ -40,6 +40,7 @@ header ul {
     width: 50%;
     margin-right: 30px;
 }
+
 header ul :nth-child(odd) {
     font-size: 1.5em;
 }
@@ -53,15 +54,12 @@ header ul li {
 }
 
 .about-the-planet {
-margin-right: 50px;
-margin-left: 50px;
-display: flex;
-flex-wrap: wrap;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .planet-description {
     position: relative;
-    
 }
-.planet
-

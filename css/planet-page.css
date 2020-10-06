@@ -1,0 +1,253 @@
+/** Global Configs*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Gugi', cursive;
+    color: white;
+}
+
+header {
+    margin: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 0px white;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 30px;
+    cursor: pointer;
+}
+
+header.logo:hover {
+    content: url(../images/logo/spacetrip-logo.svg);
+}
+
+header ul {
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-right: 30px;
+}
+
+header ul :nth-child(odd) {
+    font-size: 2em;
+}
+
+header ul :nth-child(even) {
+    cursor: pointer;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+.about-the-planet {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planet-description {
+    position: relative;
+}
+
+.planet-description p {
+    font-size: 0.8em;
+}
+
+.travelers {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: -50px;
+    border-radius: 17px;
+    background-color: #29282E;
+}
+
+.travelers p {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.opinions {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #29282E;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.opinion {
+    background-color: white;
+    min-width: 370px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 17px;
+    box-shadow: 10px 10px 15px black;
+    position: relative;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    margin-top: 75px;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.opinion .avatar {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    align-self: center;
+    border-radius: 50%;
+    width: 100px;
+    display: block;
+    align-self: center;
+    border: 5px solid white;
+    top: -60px;
+}
+
+.opinion h4 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-weight: 200;
+}
+
+.opinion .rating {
+    position: relative;
+    font-size: 2em;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: -30px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+.stars img {}
+
+.opinion p {
+    font-size: 0.8em;
+}
+
+@media (max-width: 699px) {
+    header .logo {}
+    header ul {}
+}
+
+.planet-and-name {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.welcome {
+    color: white;
+    display: inline-block;
+    max-width: 400px;
+    position: relative;
+    font-size: 3em;
+    margin-right: 10px;
+}
+
+.planet-name-big {
+    font-size: 6em;
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    margin-right: -150px;
+    z-index: 1;
+    filter: drop-shadow( 10px 10px 5px rgb(0, 0, 0));
+}
+
+
+/** Size for Smartphones */
+
+@media screen and (max-width: 699px) {
+    .planet-big {
+        width: 60vw;
+        height: 60vw;
+        box-shadow: inset -50px -50px 50px #000;
+    }
+    .welcome {
+        font-size: 1em;
+        z-index: 1;
+    }
+    .planet-name-big {
+        font-size: 2.5em;
+        margin-right: -100px;
+    }
+}
+
+
+/** Size for Tablets */
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+    .planet-big {
+        background-size: 100%;
+        width: 50vw;
+        height: 50vw;
+        transition-duration: 400ms;
+        transition: ease-in-out;
+        border-radius: 46%;
+        box-shadow: inset -90px -90px 50px #000;
+        display: inline-block;
+        margin: 15px;
+        cursor: url('pointer.svg');
+        border: none;
+    }
+    .welcome {
+        font-size: 2.2em;
+        display: block;
+    }
+    .planet-name-big {
+        font-size: 3.5em;
+        position: relative;
+        display: block;
+        margin-right: none;
+    }
+}
+
+
+/** Size for computers */
+
+@media screen and (min-width: 1024px) {
+    .planet-name-big {
+        margin-right: -250px;
+    }
+}
