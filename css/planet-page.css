@@ -67,6 +67,10 @@ header ul li {
     position: relative;
 }
 
+.planet-description p {
+    font-size: 0.8em;
+}
+
 .travelers {
     display: inline-block;
     margin-right: auto;
