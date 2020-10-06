@@ -54,8 +54,9 @@ header ul li {
 }
 
 .about-the-planet {
-    margin-right: 50px;
-    margin-left: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -64,25 +65,38 @@ header ul li {
     position: relative;
 }
 
-.opinion {
+.opinions {
     margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.075);
-    width: 300px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px white;
+    width: 100%;
+    background-color: #29282E;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 35px;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.opinion .image-and-name {
-    display: flex;
-    width: 30%;
+.opinion {
+    background-color: white;
+    min-width: 370px;
+    height: 200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-radius: 17px;
+    box-shadow: 5px 5px 10px black;
+    position: relative;
+    display: inline-flex;
+    color: black;
     flex-direction: column;
-    align-items: center;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.opinion .image-and-name img {
+.opinion img {
     position: relative;
     margin-right: auto;
     margin-left: auto;
@@ -90,14 +104,25 @@ header ul li {
     border-radius: 50%;
     width: 100px;
     display: block;
+    align-self: center;
+    border: 5px solid white;
+    top: -50px;
 }
 
-.opinion .image-and-name h4 {
-    display: block;
+.opinion h4 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
 }
 
 .opinion .rating {
     margin-top: 10px;
+    position: absolute;
+    margin: auto;
+    margin-top: 80px;
+    justify-self: center;
+    align-self: center;
+    font-size: 2em;
 }
 
 .opinion p {

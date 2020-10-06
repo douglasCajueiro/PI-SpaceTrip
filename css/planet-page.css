@@ -1,4 +1,35 @@
-/*Size for Smartphones*/
+/** Global Configs*/
+
+.planet-and-name {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.welcome {
+    color: white;
+    display: inline-block;
+    max-width: 400px;
+    position: relative;
+    font-size: 3em;
+    margin-right: 10px;
+}
+
+.planet-name-big {
+    font-size: 6em;
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    margin-right: -150px;
+    z-index: 1;
+    filter: drop-shadow( 10px 10px 5px rgb(0, 0, 0));
+}
+
+
+/** Size for Smartphones */
 
 @media screen and (max-width: 699px) {
     .planet-big {
@@ -8,14 +39,16 @@
     }
     .welcome {
         font-size: 1em;
+        z-index: 1;
     }
     .planet-name-big {
         font-size: 2.5em;
+        margin-right: -100px;
     }
 }
 
 
-/*Size for Tablets*/
+/** Size for Tablets */
 
 @media screen and (min-width: 700px) and (max-width: 1023px) {
     .planet-big {
@@ -40,5 +73,14 @@
         position: relative;
         display: block;
         margin-right: none;
+    }
+}
+
+
+/** Size for computers */
+
+@media screen and (min-width: 1024px) {
+    .planet-name-big {
+        margin-right: -250px;
     }
 }
