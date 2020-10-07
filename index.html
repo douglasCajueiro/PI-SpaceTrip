@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SPACETRIP - SEE THE UNIVERSE THROUGH YOUR OWN EYES</title>
     <link rel="stylesheet" href="/css/estiloIndex.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">SOBRE</a></li>
                 <li><a href="#">VIAGENS</a></li>
-                <li><a href="#">ACESSE</a></li>
+                <li><a id="conta" href="#">ACESSE</a></li>
                 <li><a href="#">BLOG</a></li>
             </ul>
         </div>
@@ -170,7 +171,26 @@
                 </ul>
         </div>
     </footer>
+
+    <div class="container-login">
+        <div class="login">
+            <img src="user.png" class="usuario">
+            <h1>Login</h1>
+            <form>
+                <p>Uruário</p>
+                <input type="text" name="" placeholder="Isira seu nome de uruário">
+                <p>Senha</p>
+                <input type="password" name="" placeholder="Insira sua senha">
+                <input type="submit" id="login" name="" value="Login">
+                <p><a href="#">Esqueceu sua senha?</a></p>
+                <p><a href="#">Ainda não possui uma conta?</a></p>
+            </form>
+        </div>
+    </div>
+
+
     <script src="sliderIndex.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>
