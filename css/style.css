@@ -13,3 +13,71 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+
+/** Header */
+
+header {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 5px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px white;
+    background-color: black;
+}
+
+header .logo {
+    height: 40px;
+    cursor: pointer;
+}
+
+header ul {
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    min-width: 250px;
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 1em;
+}
+
+header ul .separator {
+    font-size: 2em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    width: fit-content;
+}
+
+@media (max-width: 699px) {
+    header {
+        border-bottom: none;
+    }
+    header .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header ul {
+        margin-top: 15px;
+        width: 100%;
+        border-top: solid 2px white;
+        border-bottom: solid 2px white;
+    }
+}
+
+
+/** End of Header */

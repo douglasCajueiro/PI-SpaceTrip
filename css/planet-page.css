@@ -12,48 +12,6 @@ body {
     color: white;
 }
 
-header {
-    margin: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0px 2px 0px white;
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo {
-    height: 30px;
-    cursor: pointer;
-}
-
-header.logo:hover {
-    content: url(../images/logo/spacetrip-logo.svg);
-}
-
-header ul {
-    color: white;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    margin-right: 30px;
-}
-
-header ul :nth-child(odd) {
-    font-size: 2em;
-}
-
-header ul :nth-child(even) {
-    cursor: pointer;
-}
-
-header ul li {
-    display: inline-block;
-}
-
 .about-the-planet {
     padding-right: 50px;
     padding-left: 50px;

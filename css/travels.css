@@ -3,6 +3,41 @@
 }
 
 
+/** Douglas aqui: */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.message {
+    border-radius: 17px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.178);
+}
+
+.one-third.column {
+    background-color: white;
+    border-radius: 19px;
+    height: 600px;
+    margin-bottom: 30px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.178);
+}
+
+.one-third.column img {
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    max-height: 179px;
+}
+
+.one-third.column h5 {
+    padding: 10px;
+}
+
+
+/*-------------------------------*/
+
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -113,7 +148,7 @@ h5 {
 
 
 /* Header
-  -------------------------------------------------- */
+  -------------------------------------------------- 
 
 header {
     background-color: black;
