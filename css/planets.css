@@ -59,6 +59,10 @@
     background-image: url(../images/planets/moon-small.png);
 }
 
+#venus {
+    background-image: url(../images/planets/venus.png);
+}
+
 
 /*disables the blue overlay when a div is touched or clicked*/
 
