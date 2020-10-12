@@ -17,7 +17,7 @@
     transition-duration: 600ms;
     box-shadow: none;
     text-shadow: 3px 4px 50px rgb(243, 220, 12);
-    transform: translatey(5px);  
+    transform: translatey(5px);
 }
 
 .planet-big {
@@ -32,16 +32,15 @@
     margin: 15px;
     cursor: url('pointer.svg');
     border: none;
-    filter: drop-shadow(-15px -15px 15px rgba(247, 255, 170, 0.123)); 
-    
+    filter: drop-shadow(-15px -15px 15px rgba(247, 255, 170, 0.123));
 }
+
 .planet-big:hover {
     transition: ease-in-out;
     transition-duration: 600ms;
     text-shadow: 3px 4px 50px rgb(243, 220, 12);
     box-shadow: inset -30px -30px 50px #000;
-    filter: drop-shadow(-20px -20px 15px rgba(247, 255, 170, 0.123)); 
-    
+    filter: drop-shadow(-20px -20px 15px rgba(247, 255, 170, 0.123));
 }
 
 #arid {
@@ -60,9 +59,13 @@
     background-image: url(../images/planets/moon-small.png);
 }
 
+#venus {
+    background-image: url(../images/planets/venus.png);
+}
 
 
 /*disables the blue overlay when a div is touched or clicked*/
+
 .noSelect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -73,13 +76,13 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+
 /* sets images as non draggable */
+
 img {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
     user-drag: none;
-  }
-
-  
+}
