@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/planets.css">
+    <link rel="stylesheet" href="../css/texts.css">
+    <link rel="stylesheet" href="../css/planet-page.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../images/logo/spacetrip-gradient-logo.svg" alt="SpaceTrip Logo">
+
+        <ul class="lista-nav-header">
+            <li class="separator">|</li>
+            <li><a href="../index.html">Home</a></li>
+            <li class="separator">|</li>
+            <li><a href="travels.html">Trips</a></li>
+            <li class="separator">|</li>
+            <li><a href="">Planets</a></li>
+            <li class="separator">|</li>
+            <li><a id="conta" href="#">Login</a></li>
+            <li class="separator">|</li>
+        </ul>
+
+    </header>
+
+
+    <main>
+
+        <div class="planet-and-name">
+            <div class="welcome">This is</div>
+            <div class="planet-name-big">MARS</div>
+
+            <div class="planet-big noSelect big-image" id="earth"></div>
+        </div>
+
+        <div class="about-the-planet">
+
+            <div class="planet-description">
+                <h1>The Water Planet</h1>
+                <!-- Source: https://en.wikipedia.org/wiki/Earth-->
+                <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. According to radiometric dating estimation and other evidence, Earth formed over 4.5 billion years ago. Earth's gravity interacts with other
+                    objects in space, especially the Sun and the Moon, which is Earth's only natural satellite. Earth orbits around the Sun in about 365.25 days. Earth's axis of rotation is tilted with respect to its orbital plane, producing seasons on
+                    Earth. The gravitational interaction between Earth and the Moon causes tides, stabilizes Earth's orientation on its axis, and gradually slows its rotation. Earth is the densest planet in the Solar System and the largest and most massive
+                    of the four rocky planets.</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="opinions">
+            <div class="travelers">
+                <p>Our Travelers</p>
+            </div>
+
+            <div class="opinion">
+
+                <img class="avatar" src="../images/avatars/raul-seixas.jpg" alt="">
+
+                <div class="rating">
+                    <p>"Não vai a lugar nenhum!"</p>
+
+                </div>
+                <h4>Raul Seixas</h4>
+                <div class="stars">
+                    <img src="../images/planets/star-yellow.svg" alt="">
+                    <img src="../images/planets/star-gray.svg" alt="">
+                    <img src="../images/planets/star-gray.svg" alt="">
+                    <img src="../images/planets/star-gray.svg" alt="">
+                    <img src="../images/planets/star-gray.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="opinion">
+
+                <img class="avatar" src="../images/avatars/rita-lee.jpg" alt="">
+
+                <div class="rating">
+                    <p>"Alô alô Marciano"</p>
+
+                </div>
+                <h4>Rita Lee</h4>
+                <div class="stars">
+                    <img src="../images/planets/star-yellow.svg" alt="">
+                    <img src="../images/planets/star-yellow.svg" alt="">
+                    <img src="../images/planets/star-yellow.svg" alt="">
+                    <img src="../images/planets/star-gray.svg" alt="">
+                    <img src="../images/planets/star-gray.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="opinion">
+
+                <img class="avatar" src="../images/avatars/jared-leto.jpg" alt="">
+
+                <div class="rating">
+                    <p>"Just 30 Seconds!"</p>
+
+                </div>
+                <h4>Jared Leto</h4>
+                <div class="stars">
+                    <img src="../images/planets/star-yellow.svg" alt="">
+                    <img src="../images/planets/star-yellow.svg" alt="">
+                    <img src="../images/planets/star-yellow.svg" alt="">
+                    <img src="../images/planets/star-yellow.svg" alt="">
+                    <img src="../images/planets/star-gray.svg" alt="">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-descricao">
+            <div class="logo-spacetrip">
+                <img src="../images/index/o-spacetrip-logo.png" alt="logomarca da spacetrip">
+            </div>
+            <div class="copy">
+                <p class="copy-paragrafo">&copy; 2020<br>SpaceTrip.com</p>
+            </div>
+            <div class="logo-DH">
+                <img src="../images/index/logo-DH.png" alt="logomarca da Digital House">
+            </div>
+        </div>
+        <div class="alunos">
+            <h5>DESENVOLVIDO POR:</h6>
+                <ul>
+                    <li><a href="https://github.com/ezequias-ps">Ezequias Sobrenome</a></li>
+                    <li><a href="https://github.com/douglasCajueiro">Douglas Cajueiro</a></li>
+                    <li><a href="https://github.com/JoseaneGrigolo">Joseane Grigolo</a></li>
+                    <li><a href="#">Luiz Sobrenome</a></li>
+                    <li><a href="https://github.com/mdasantana">Matheus Santana</a></li>
+                </ul>
+        </div>
+    </footer>
+
+    <div class="container-login">
+        <div class="login">
+            <img src="/images/avatars/user.png" class="usuario">
+            <h1>Login</h1>
+            <form>
+                <p>User</p>
+                <input type="text" name="" placeholder="Username / E-mail">
+                <p>Password</p>
+                <input type="password" name="" placeholder="******">
+                <input type="submit" id="login" name="" value="Login">
+                <p><a href="#">Forgot your password? Click here.</a></p>
+                <p><a href="#">Not registered? Create an account.</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+
+
+</body>
+
+</html>
