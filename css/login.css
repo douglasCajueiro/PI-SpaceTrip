@@ -1,21 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    /* background-image: url(fundo.jpg); */
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.menu {
-    display: flex;
-    overflow: hidden;
-    justify-content: space-around;
-}
-
 .container-login {
     width: 100%;
     height: 100vh;
@@ -32,7 +14,7 @@ body {
 
 .login {
     width: 320px;
-    height: 420px;
+    height: 450px;
     border: 2px solid #000;
     border-radius: 50% 50% 0 0;
     color: #fff;
@@ -43,6 +25,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
 .usuario {
@@ -146,5 +129,34 @@ input[type="password"] {
     }
     to {
         transform: translateY(-100vh);
+    }
+}
+
+.form-down {
+    bottom: auto;
+    animation: naveDown 1s forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes naveDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* borada vermelha "alerta" */
+.alerta {
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    from {
+        border-color: red;
+    }
+    to {
+        border-color: white;
     }
 }
