@@ -1,162 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SPACETRIP - SEE THE UNIVERSE THROUGH YOUR OWN EYES</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="../PI/css/login.css">
+    <link rel="stylesheet" href="../PI/css/style.css">
+    <link rel="stylesheet" href="../PI/css/estiloIndex.css">
 </head>
 
 <body>
     <header>
-        <div class="logo-header">
-            <img src="../imagens/logo-spacetrip.jpg" alt="Logomarca da SpaceTrip" class="logo-spacetrip-header">
+        <img class="logo" src="../images/logo/spacetrip-gradient-logo.svg" alt="SpaceTrip Logo">
+        <ul class="lista-nav-header">
+            <li class="separator">|</li>
+            <li><a href="../index.html">Home</a></li>
+            <li class="separator">|</li>
+            <li><a href="pages/travels.html">Trips</a></li>
+            <li class="separator">|</li>
+            <li><a href="">Planets</a></li>
+            <li class="separator">|</li>
+            <li><a id="conta" href="#">Login</a></li>
+            <li class="separator">|</li>
+        </ul>
+        <!--<div class="logo-header">
+            <img src="../imagens/o-spacetrip-logo.png" alt="Logomarca da SpaceTrip" class="logo-spacetrip-header">
         </div>
         <div class="nav-bar-header">
             <ul class="lista-nav-header">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Viagens</a></li>
-                <li><a href="#">Acesse</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">VIAGENS</a></li>
+                <li><a href="#">ACESSE</a></li>
+                <li><a href="#">BLOG</a></li>
             </ul>
-        </div>
+        </div>-->
     </header>
     <main>
         <div class="conteiner-pai">
             <div class="conteudo1">
-                <div class="slider">
-                    <div class="imagens-conteudo1">
-                        <img class="img-slider slider-ativo" src="../imagens/astronauta_1.jpg" alt="">
-                        <img class="img-slider" src="../imagens/nave_1.jpg" alt="">
-                        <img class="img-slider" src="../imagens/planeta_1.jpg" alt="">
-                        <img class="img-slider" src="../imagens/astronauta_2.jpg" alt="">
-                        <img class="img-slider" src="../imagens/nave_2.jpg" alt="">
-                        <img class="img-slider" src="../imagens/planeta_2.jpg" alt="">
-                        <img class="img-slider" src="../imagens/planeta_5.jpg" alt="">
+                <div class="gallery">
+                    <div class="gallery__prev"></div>
+                    <div class="gallery__next"></div>
+                    <div class="gallery__stream">
+                      <div class="gallery__item bg-1"></div>
+                      <div class="gallery__item bg-2"></div>
+                      <div class="gallery__item bg-3"></div>
+                      <div class="gallery__item bg-4"></div>
+                      <div class="gallery__item bg-5"></div>
+                      <div class="gallery__item bg-6"></div>
+                      <div class="gallery__item bg-7"></div>
                     </div>
-                </div>
-                <div class="descricao-conteudo1">
-                    <div class="titulo">
-                        <h1 class="titulo-conteudo1">VIAJE COM A SPACETRIP</h1>
-                    </div>
-                    <div class="paragrafo">
-                        <p class="texto-conteudo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam corporis tempore</p>
-                    </div>
-                </div>
+                  </div>
             </div>
             <div class="conteudo2">
                 <div class="conteudo2 titulo-conteudo2">
-                    <h2>NOSSOS SERVIÇOS</h2>
+                    <h2>OUR SERVICES</h2>
                 </div>
                 <div class="conteudo2 servicos">
                     <div class="conteiner-servicos-oferecidos">
-                        <div class="servicos-oferecidos">
-                            <a href="#" alt=""><img src="../imagens/nave_1.jpg" alt=""></a>
-                            <h3>VIAGENS ESPACIAIS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio quia excepturi sed</p>
+                        <div class="servicos-oferecidos obj1">
+                            <div class="slider">
+                                <div class="imagens-conteudo1">
+                                    <img id="slider1" class="img-slider slider-ativo" src="../PI/images/index/viagem-espacial.jpg" alt="Space Travel SpiceTrip">
+                                    <img id="slider1" class="img-slider" src="../PI/images/index/servicos1-2.jpg" alt="Space Travel SpiceTrip">
+                                    <img id="slider1" class="img-slider" src="../PI/images/index/servicos1.jpg" alt="Space Travel SpiceTrip">
+                                </div>
+                                <div class="descricao-conteudo1">
+                                    <div class="titulo">
+                                        <h3 class="titulo-conteudo1">SPACE TRAVEL</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="servicos-oferecidos">
-                            <a href="#" alt=""><img src="../imagens/nave_1.jpg" alt=""></a>
-                            <h3>VOOS NA ATMOSFERA</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio quia excepturi sed</p>
+                        <div class="servicos-oferecidos obj2">
+                            <div class="slider">
+                                <div class="imagens-conteudo1">
+                                    <img id="slider2" class="img-slider slider-ativo" src="../PI/images/index/orbita-terra.jpg" alt="Viagem a Orbita da Terra SpaceTrip">
+                                    <img id="slider2" class="img-slider" src="../PI/images/index/orbita-terra1.jpeg" alt="Viagem a Orbita da Terra SpaceTrip">
+                                    <img id="slider2" class="img-slider" src="../PI/images/index//orbita-terra2.jpg" alt="Viagem a Orbita da Terra SpaceTrip">
+                                </div>
+                                <div class="descricao-conteudo1">
+                                    <div class="titulo">
+                                        <h3 class="titulo-conteudo1">EARTH ORBIT TRAVEL</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="servicos-oferecidos">
-                            <a href="#" alt=""><img src="../imagens/nave_1.jpg" alt=""></a>
-                            <h3>PARQUE DE DIVERSÕES</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio quia excepturi sed</p>
+                        <div class="servicos-oferecidos obj3">
+                            <div class="slider">
+                                <div class="imagens-conteudo1">
+                                    <img id="slider3" class="img-slider slider-ativo" src="../PI/images/index/parque-espacial.jpg" alt="Space Park SpaceTrip">
+                                    <img id="slider3" class="img-slider" src="../PI/images/index/parque-espacial1.jpg" alt="Space Park SpaceTrip">
+                                    <img id="slider3" class="img-slider" src="../PI/images/index/parque-espacial2.jpg" alt="Space Park SpaceTrip">
+                                </div>
+                                <div class="descricao-conteudo1">
+                                    <div class="titulo">
+                                        <h3 class="titulo-conteudo1">SPACE PARK</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="servicos-oferecidos">
-                            <a href="#" alt=""><img src="../imagens/nave_1.jpg" alt=""></a>
-                            <h3>PESQUISA ESPACIAL</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio quia excepturi sed</p>
+                        <div class="servicos-oferecidos obj4">
+                            <div class="slider">
+                                <div class="imagens-conteudo1">
+                                    <img id="slider4" class="img-slider slider-ativo" src="../PI/images/index/observatorio.jpg" alt="observatory SpaceTrip">
+                                    <img id="slider4" class="img-slider" src="../PI/images/index/observatorio1.jpg" alt="Observatory SpaceTrip">
+                                    <img id="slider4" class="img-slider" src="../PI/images/index/observatorio2.jpg" alt="Observatory SpaceTrip">
+                                </div>
+                                <div class="descricao-conteudo1">
+                                    <div class="titulo">
+                                        <h3 class="titulo-conteudo1">OBSERVATORY</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="servicos-oferecidos">
-                            <a href="#" alt=""><img src="../imagens/nave_1.jpg" alt=""></a>
-                            <h3>TREINAMENTO DE ASTRONAUTAS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio quia excepturi sed</p>
+                        <div class="servicos-oferecidos obj5">
+                            <div class="slider">
+                                <div class="imagens-conteudo1">
+                                    <img id="slider5" class="img-slider slider-ativo" src="../PI/images/index/treino-piloto2.jpg" alt="Pilot Training Spacerip">
+                                    <img id="slider5" class="img-slider" src="../PI/images/index/treino-piloto1.jpg" alt="Pilot Training Spacerip">
+                                    <img id="slider5" class="img-slider" src="../PI/images/index/treino-piloto3.jpg" alt="Pilot Training Spacerip">
+                                </div>
+                                <div class="descricao-conteudo1">
+                                    <div class="titulo">
+                                        <h3 class="titulo-conteudo1">PILOT TRAINING</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="servicos-oferecidos">
-                            <a href="#" alt=""><img src="../imagens/nave_1.jpg" alt=""></a>
-                            <h3>OUTROS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio quia excepturi sed</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="conteudo3">
-                <div class="conteiner-pai-conteudo3">
-                    
-                </div>
-                 <div class="midia-conteudo3">
-                     <div class="ultimos-videos-princeipal">
-                        <div class="iframe-youtube-principal">
-                            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/QfrLK9xFpYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="informacoes-iframe-youtube">
-                            <h2>Lorem ipsum dolor</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, harum quos? Nam magni sequi odit quasi blanditiis rerum</p>
-                        </div>
-                     </div>
-                     <div class="ultimos-videos-secundarios">
-
-                     </div>
-                    <div class="ultimos-videos">
-                        <div class="iframe-youtube">
-                            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/QfrLK9xFpYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="informacoes-iframe-youtube">
-                            <h2>Lorem ipsum dolor</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, harum quos? Nam magni sequi odit quasi blanditiis rerum</p>
-                        </div>
-                    </div>
-                    <div class="ultimos-videos">
-                        <div class="iframe-youtube">
-                            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/QfrLK9xFpYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="informacoes-iframe-youtube">
-                            <h2>Lorem ipsum dolor</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, harum quos? Nam magni sequi odit quasi blanditiis rerum</p>
-                        </div>
-                    </div>
-                    <div class="ultimos-videos">
-                        <div class="iframe-youtube">
-                            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/QfrLK9xFpYg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="informacoes-iframe-youtube">
-                            <h2>Lorem ipsum dolor</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, harum quos? Nam magni sequi odit quasi blanditiis rerum</p>
+                        <div class="servicos-oferecidos obj6">
+                            <div class="slider">
+                                <div class="imagens-conteudo1">
+                                    <img id="slider6" class="img-slider slider-ativo" src="../PI/images/index/construcao-foguete.jpg" alt="Aircraft SpaceTrip">
+                                    <img id="slider6" class="img-slider" src="../PI/images/index/construcao-foguete1.jpg" alt="Aircraft SpaceTrip">
+                                    <img id="slider6" class="img-slider" src="../PI/images/index/construcao-foguete2.jpg" alt="Aircraft SpaceTrip">
+                                </div>
+                                <div class="descricao-conteudo1">
+                                    <div class="titulo">
+                                        <h3 class="titulo-conteudo1">AIRCRAFT</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="conteudo4">
-                <div class="texto-newsletter">
-                    <h4>FIQUE POR DENTRO DAS NOVIDADES</h4>
-                    <p>Viagens, Descobertas, Promoções e Muito mais!</p>
-                </div>
                 <div class="newsletter">
+                    <div class="texto-newsletter">
+                        <h2>STAY IN THE NEWS</h2>
+                        <p>TRIPS, DISCOVERIES, PROMOTIONS AND MORE!</p>
+                    </div>
                     <div class="form-newsletter">
-                        <form action="newlatter.php" method="POST">
-                            <input class="input-email" type="email" id="email-newslatter" name="email-newslatter" placeholder="seuemail@exemplo.com">
+                        <form id="formulario-newlatter" action="newlatter.php" method="POST">
+                            <input class="input-email" type="email" id="email-newslatter" name="email-newslatter" placeholder="seuemail@exemplo.com" required>
                             <div class="chekbox-termos-condicoes">
-                                <input type="checkbox" value="termos-condicoes">
-                                <h6>Aceito os<a href="#">termos e condições</a></h6>
+                                <input id="botao-termos" type="checkbox" value="aceito" name="termos-condicoes" required>
+                                <h5>I ACCEPT THE <a href="#">TERMS AND CONDITIONS</a></h5>
                             </div>
-                            <div>
-                                <button type="submit">INSCREVER-SE</button>
+                            <div class="div-do-botao-newslater">
+                                <button class="botao-newslatter" type="submit">SUBSCRIBE</button>
                             </div>
-                            <div class="redes-sociais">
+                            <!--<div class="redes-sociais">
                                 <ul>
                                     <li><a href="https://www.facebook.com/"></a></li>
                                     <li><a href="https://www.instagram.com/"></a></li>
                                     <li><a href="https://twitter.com/home"></a></li>
                                     <li><a href="https://www.youtube.com/"></a></li>
                                 </ul>
-                            </div>
+                            </div>-->
                         </form>
                     </div>
                 </div>
@@ -166,26 +181,42 @@
     <footer>
         <div class="footer-descricao">
             <div class="logo-spacetrip">
-                <img src="../imagens/logo-spacetrip.jpg" alt="logomarca da spacetrip">
+                <!--<img src="../imagens/o-spacetrip-logo.png" alt="logomarca da spacetrip">-->
             </div>
             <div class="copy">
-                <p class="copy-paragrafo">&copy; 2020<br>SpaceTrip.com</p>
+                <p class="copy-paragrafo">&copy; 2020 SpaceTrip.com</p>
             </div>
             <div class="logo-DH">
-                <img src="../imagens/logo-DH.png" alt="logomarca da Digital House">
+                <!--<img src="../imagens/logo-DH.png" alt="logomarca da Digital House">-->
             </div>
         </div>
         <div class="alunos">
+            <h5>DESENVOLVIDO POR:</h6>
             <ul>
                 <li><a href="https://github.com/ezequias-ps">Ezequias Sobrenome</a></li>
                 <li><a href="https://github.com/douglasCajueiro">Douglas Cajueiro</a></li>
                 <li><a href="https://github.com/JoseaneGrigolo">Joseane Grigolo</a></li>
-                <li><a href="#">Luiz Sobrenome</a></li>
+                <li><a href="https://github.com/douglasCajueiro/PI-SpaceTrip">Luiz</a></li>
                 <li><a href="https://github.com/mdasantana">Matheus Santana</a></li>
             </ul>
         </div>
     </footer>
-    <script src="sliderIndex.js"></script>
+    <div class="container-login">
+        <div class="login">
+            <img src="/images/avatars/user.png" class="usuario">
+            <h1>Login</h1>
+            <form>
+                <p>User</p>
+                <input type="text" name="" placeholder="Username / E-mail">
+                <p>Password</p>
+                <input type="password" name="" placeholder="******">
+                <input type="submit" id="login" name="" value="Login">
+                <p><a href="#">Forgot your password? Click here.</a></p>
+                <p><a href="#">Not registered? Create an account.</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="../PI/js/sliderIndex.js"></script>
+    <script src="../PI/js/login.js"></script>
 </body>
-
 </html>

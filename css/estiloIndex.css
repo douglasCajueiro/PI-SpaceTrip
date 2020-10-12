@@ -6,6 +6,7 @@
     }
     body{
         width: 100vw;
+        max-width: 100%;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -167,16 +168,18 @@
     @media (min-width: 780px) and (max-width: 1025px){
         .conteudo1{
             width: 100%;
+            height: 32.5vh;
         }
     }
     @media (min-width: 1026px){
         .conteudo1{
             width: 100%;
-            height: 88vh;
+            height: 89vh;
         }
     }
-    /*estilo das imgs*/
-        .galeria{
+    /* galeria */
+
+        .gallery{
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -185,16 +188,33 @@
             max-height: 28vw;
             overflow: hidden;
         }
-        .galeria_stream{
+        .gallery:before,.gallery:after{
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 20%;
+            height: 100%;
+            z-index: 3;
+        }
+        .gallery:before{
+            left: 0;
+            background:  linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+        .gallery:after{
+            right: 0;
+            background:  linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+        .gallery__stream{
             position: relative;
             top: 50%;
             transform: translateY(-50%);
             width: 100%;
             height: 100%;
         }
-        .galeria_item{
+        .gallery__item{
             position: absolute;
-            width: 60%;
+            width: 70%;
             height: 100%;
             transition: 1s all ease;
             background-size: cover;
@@ -202,43 +222,58 @@
             background-position: center center;
             border-radius: 5px;
         }
-
-        /* itens */
-        .galeria_item:nth-child(1){
+        .gallery__item:nth-child(1){
             left: 0;
             z-index: 1;
             transform: translateX(-100%) scale(.8);
         }
-        .galeria_item:nth-child(2){
+        .gallery__item:nth-child(2){
             left: 0;
             z-index: 2;
             transform: translateX(-50%) scale(.8);
         }
-        .galeria_item:nth-child(3){
+        .gallery__item:nth-child(3){
             left: 50%;
             z-index: 4;
             transform: translateX(-50%) scale(1);
         }
-        .galeria_item:nth-child(4){
+        .gallery__item:nth-child(4){
             left: 100%;
             z-index: 2;
             transform: translateX(-50%) scale(.8);
         }
-        .galeria_item:nth-child(n+5){
+        .gallery__item:nth-child(n+5){
             left: 100%;
             z-index: 1;
             transform: scale(.8);
         }
 
-        /* cackgrounds */
+    /* controles */
+        .gallery__prev,.gallery__next{
+            position: absolute;
+            top: 50%;
+            z-index: 4;
+            width: 50%;
+            height: 100%;
+            transform: translateX(-50%) translateY(-50%) scale(.8);
+            cursor: pointer;
+        }
+        .gallery__prev{
+            left: 0;
+        }
+        .gallery__next{
+            left: 100%;
+        }
+
+    /* Backgrounds */
         .bg-1{
-            background-image: url("../images/index/astronauta_1.jpg");
+            background-image: url("../images/index/planeta_1.jpg");
         }
         .bg-2{
             background-image: url("../images/index/nave_1.jpg");
         }
         .bg-3{
-            background-image: url("../images/index/planeta_1.jpg");
+            background-image: url("../images/index/nave_2.jpg");
         }
         .bg-4{
             background-image: url("../images/index/planeta_5.jpg");
@@ -247,48 +282,11 @@
             background-image: url("../images/index/astronauta_2.jpg");
         }
         .bg-6{
-            background-image: url("../images/index/nave_2.jpg");
+            background-image: url("../images/index/astronauta_1.jpg");
         }
         .bg-7{
             background-image: url("../images/index/planeta_2.jpg");
         }
-
-        /* controles das imgs*/
-        .galeria_anterior,.galeria_proximo{
-        position: absolute;
-        top: 50%;
-        z-index: 4;
-        width: 50%;
-        height: 100%;
-        transform: translateX(-50%) translateY(-50%) scale(.8);
-        cursor: pointer;
-        }
-        .galeria_anterior {
-        left: 0;
-        }
-        .galeria_proximo{
-        left: 100%;
-        }
-
-        /* sombras dos lados*/
-        .galeria:before,.galeria:after{
-        display: block;
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 20%;
-        height: 100%;
-        z-index: 3;
-        }
-        .galeria:before{
-        left: 0;
-        background:  linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-        }
-        .galeria:after{
-        right: 0;
-        background:  linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-        }
-    /*estilo das imgs*/
 
 /*FIM CONTEUDO 1*/
 
@@ -312,10 +310,55 @@
     }
     .servicos-oferecidos{
         width: 95%;
+        height: 17.5vh;
         margin-bottom: 2vh;
-        border: darkslategray solid 2px;
-        background-color: rgba(28,28,28,.6);
+        /*border: darkslategray solid 2px;
+        background-color: rgba(28,28,28,.6);*/
     }
+    .imagens-conteudo1{
+        display: block;
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .imagens-conteudo1>.img-slider{
+        display: block;
+        float: left;
+        width: 100%;
+        height: auto;
+        /*max-height: 100%;*/
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        transition-property: all;
+        transition-duration: .8s;
+        transition-timing-function: ease-in;
+        transition-duration: 0.5s;
+        opacity: 0;
+    }
+    .imagens-conteudo1>.slider-ativo{
+        opacity: 1;
+    }
+    .descricao-conteudo1{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 50px;
+        color: white;
+        background-color: rgba(0, 0, 5, .6);
+
+    }
+    .descricao-conteudo1>.titulo{
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*
     .servicos-oferecidos>a{
         width: 80%;
         padding-top: 3vh;
@@ -327,11 +370,14 @@
     }
     .servicos-oferecidos>h3{
         width: 100%;
-        margin-top: 1vh;
-        margin-bottom: .3vh;
+        /*margin-top: 1vh;
+        margin-bottom: .3vh;*/
+        /*margin-top: auto;
+        margin-bottom: auto;
         margin-left: auto;
         margin-left: auto;
         text-align: center;
+        z-index: 1;
     }
     .servicos-oferecidos>p{
         max-width: 100%;
@@ -340,15 +386,17 @@
         margin-left: .5vh;
         margin-left: .5vh;
         text-align: start;
-    }
+    }*/
     @media (min-width: 780px) and (max-width: 1024px){
         .servicos-oferecidos{
             width: 30%;
+            height: 9.02vh;
         }
     }
     @media (min-width: 1025px){
         .servicos-oferecidos{
             width: 30%;
+            height: 25.7vh;
         }
     }
 /*FIM CONTEUDO 2*/
@@ -387,6 +435,7 @@
 
     .conteudo4{
         width: 100%;
+        margin-top: 3vh;
         margin-bottom: 0;
         height: auto;
         display: flex;
@@ -455,10 +504,16 @@
             padding: 6px 13px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }@media (min-width: 780px){
+            .conteudo4{
+                margin-top: 4vh;
+            }
             .botao-newslatter{
                 padding: 10px 15px;
             }
         }@media (min-width: 780px) and (max-width: 1024px){
+            .conteudo4{
+                margin-top: 4vh;
+            }
             .input-email{
             width: 30%;
             height: 2.5vh;
@@ -470,6 +525,9 @@
             }
         }
         @media (min-width: 1025px){
+            .conteudo4{
+                margin-top: 4vh;
+            }
             .input-email{
                 width: 20%;
                 height: 5vh;
@@ -588,12 +646,7 @@
 /*FIM FOOTER*/
 
 
-
-
-
-
-
-
+/*RESTOS DE CÓDIGOS*/
 
 
 /*h1,h2,h3,h4,h5,h6{
@@ -655,3 +708,118 @@ p{
         font-size: 12px;
         text-align: start;
     }
+
+            /*.gallery{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 90%;
+            max-height: 28vw;
+            overflow: hidden;
+        }
+        .galeria_stream{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 100%;
+        }
+        .galeria_item{
+            position: absolute;
+            width: 60%;
+            height: 100%;
+            transition: 1s all ease;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 5px;
+        }*/
+
+        /* itens */
+        /*.galeria_item:nth-child(1){
+            left: 0;
+            z-index: 1;
+            transform: translateX(-100%) scale(.8);
+        }
+        .galeria_item:nth-child(2){
+            left: 0;
+            z-index: 2;
+            transform: translateX(-50%) scale(.8);
+        }
+        .galeria_item:nth-child(3){
+            left: 50%;
+            z-index: 4;
+            transform: translateX(-50%) scale(1);
+        }
+        .galeria_item:nth-child(4){
+            left: 100%;
+            z-index: 2;
+            transform: translateX(-50%) scale(.8);
+        }
+        .galeria_item:nth-child(n+5){
+            left: 100%;
+            z-index: 1;
+            transform: scale(.8);
+        }*/
+
+        /* cackgrounds */
+        /*.bg-1{
+            background-image: url("../imagens/astronauta_1.jpg");
+        }
+        .bg-2{
+            background-image: url("../imagens/nave_1.jpg");
+        }
+        .bg-3{
+            background-image: url("../imagens/planeta_1.jpg");
+        }
+        .bg-4{
+            background-image: url("../imagens/planeta_5.jpg");
+        }
+        .bg-5{
+            background-image: url("../imagens/astronauta_2.jpg");
+        }
+
+        .bg-6{
+            background-image: url("../imagens/nave_2.jpg");
+        }
+        .bg-7{
+            background-image: url("../imagens/planeta_2.jpg");
+        }*/
+
+        /* controles das imgs*/
+        /*.galeria_anterior,.galeria_proximo{
+        position: absolute;
+        top: 50%;
+        z-index: 4;
+        width: 50%;
+        height: 100%;
+        transform: translateX(-50%) translateY(-50%) scale(.8);
+        cursor: pointer;
+        }
+        .galeria_anterior {
+        left: 0;
+        }
+        .galeria_proximo{
+        left: 100%;
+        }*/
+
+        /* sombras dos lados*/
+        /*.galeria:before,.galeria:after{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 20%;
+        height: 100%;
+        z-index: 3;
+        }
+        .galeria:before{
+        left: 0;
+        background:  linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+        .galeria:after{
+        right: 0;
+        background:  linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }*/
+    /*estilo das imgs*/
