@@ -26,7 +26,11 @@ btnLogin.addEventListener("click", function(event){
     }else{
         formLogin.classList.remove("form-up");
         formLogin.classList.add("form-upup");
-        setTimeout(function(){ containerForm.classList.remove("zIndex"); }, 1000);
+        setTimeout(function(){ 
+            containerForm.classList.remove("zIndex"); 
+            userName.value = "";
+            senha.value = "";
+        }, 1000);
     }
 });
 
@@ -37,11 +41,6 @@ userName.addEventListener("click", function(event){
 senha.addEventListener("click", function(event){
     this.classList.remove("alerta");
 })
-
-
-
-
-
 
 voltar.addEventListener("click", function(event){
     event.preventDefault();
