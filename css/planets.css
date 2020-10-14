@@ -1,3 +1,26 @@
+.tiny-planet {
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    transition-duration: 400ms;
+    transition: ease-in-out;
+    border-radius: 46%;
+    box-shadow: inset -18px -18px 15px #000;
+    display: inline-block;
+    margin: 15px;
+    cursor: url('pointer.svg');
+    border: none;
+    text-align: center;
+    line-height: 90px;
+}
+
+.tiny-planet:hover {
+    transition: ease-in-out;
+    transition-duration: 600ms;
+    box-shadow: none;
+    text-shadow: 3px 4px 50px rgb(243, 220, 12);
+}
+
 .planet-small {
     background-size: 100%;
     width: 250px;
@@ -44,23 +67,27 @@
 }
 
 #arid {
-    background-image: url(../images/planets/Arid_Planet_correct.png);
+    background-image: url("../imagens/planets/Arid_Planet_correct.png");
 }
 
 #mars {
-    background-image: url(../images/planets/mars.png);
+    background-image: url("../imagens/planets/mars.png");
 }
 
 #earth {
-    background-image: url(../images/planets/earth-small.png);
+    background-image: url("../imagens/planets/earth-small.png");
 }
 
 #moon {
-    background-image: url(../images/planets/moon-small.png);
+    background-image: url("../imagens/planets/moon-small.png");
 }
 
 #venus {
-    background-image: url(../images/planets/venus.png);
+    background-image: url("../imagens/planets/venus.png");
+}
+
+#jupiter {
+    background-image: url("../imagens/planets/jupiter.png");
 }
 
 

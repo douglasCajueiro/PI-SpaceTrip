@@ -147,7 +147,9 @@ input[type="password"] {
     }
 }
 
+
 /* borada vermelha "alerta" */
+
 .alerta {
     animation: piscar 1s infinite;
 }

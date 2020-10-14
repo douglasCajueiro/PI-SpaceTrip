@@ -3,6 +3,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	background-color: #000;
 
 }
 body a {
@@ -113,8 +114,8 @@ h1, h2, h3, h4, h5, h6 {
 .bottomgridtext {
     padding-left: 40px;
     padding-right: 100px;
-    background: #ececec;
-    background: #1e2938;
+    /*background: #ececec;
+    background: #1e2938;*/
     padding-bottom: 72px;
 }
 .readmore-a a {
@@ -152,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
     align-content: center;
 }
 .agileits_banner_bottom_left{
-	background-color: #333;
+	/*background-color: #333;*/
     background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -160,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-background-size:cover;
 }
 .agileits_banner_bottom_left1{
-	background-color: #333;
+	/*background-color: #333;*/
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -168,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-background-size:cover;
 }
 .agileits_banner_bottom_left2{
-	background-color: #333;
+	/*background-color: #333;*/
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;

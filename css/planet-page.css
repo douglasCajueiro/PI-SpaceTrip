@@ -17,10 +17,32 @@ body {
     color: white;
 }
 
+main {
+    background-color: black;
+}
+
+.tiny-planets {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    right: 15px;
+    z-index: 1;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tiny-planet p {
+    filter: drop-shadow( 5px 5px 2px rgb(0, 0, 0));
+    font-size: larger;
+    color: white;
+}
+
 .about-the-planet {
     padding-right: 50px;
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -30,8 +52,9 @@ body {
 }
 
 .planet-description p {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .travelers {
@@ -111,6 +134,7 @@ body {
     height: 100%;
     flex-wrap: wrap;
     margin-top: -30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .stars {
@@ -174,6 +198,25 @@ body {
     main .opinions {
         padding-right: 15px;
         padding-left: 15px;
+    }
+    .tiny-planet {
+        background-size: 100%;
+        width: 50px;
+        height: 50px;
+        transition-duration: 400ms;
+        transition: ease-in-out;
+        border-radius: 46%;
+        box-shadow: inset -18px -18px 15px #000;
+        display: inline-block;
+        margin: 15px;
+        cursor: url('pointer.svg');
+        border: none;
+        text-align: center;
+        line-height: 50px;
+    }
+    .tiny-planet p {
+        font-size: small;
+        margin-top: 10px;
     }
 }
 
